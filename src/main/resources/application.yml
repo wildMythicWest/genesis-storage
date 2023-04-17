@@ -1,0 +1,9 @@
+server:
+  port: 8083
+spring:
+  cloud:
+    stream:
+      bindings:
+        store-in-0:
+          destination: processing-queue
+          group: storage
